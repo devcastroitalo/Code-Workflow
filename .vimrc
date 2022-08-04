@@ -5,6 +5,7 @@ call plug#begin()
     Plug 'jiangmiao/auto-pairs'
     Plug 'sheerun/vim-polyglot'
     Plug 'preservim/nerdtree'
+    Plug 'morhetz/gruvbox'
 call plug#end()
 
 syntax on
@@ -28,11 +29,13 @@ set splitright
 set splitbelow 
 set autoread
 set mouse=a
+set nowrap
 filetype on
 filetype plugin on
 filetype indent on
 
-colorscheme elflord
+set bg=dark
+colorscheme gruvbox
 
 map <C-a> :NERDTreeToggle<CR>
 map <C-o> :term<Enter>
@@ -44,6 +47,8 @@ map <C-l> <C-w>l
 
 let mapleader=" "
 nnoremap <SPACE> <Nop>
+
+nnoremap ,w <C-w>
 
 let g:user_emmet_mode='n'
 let g:user_emmet_leader_key=','
