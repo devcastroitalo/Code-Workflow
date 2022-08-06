@@ -5,7 +5,7 @@ call plug#begin()
     Plug 'jiangmiao/auto-pairs'
     Plug 'sheerun/vim-polyglot'
     Plug 'preservim/nerdtree'
-    Plug 'morhetz/gruvbox'
+    Plug 'jnurmine/Zenburn'
 call plug#end()
 
 syntax on
@@ -33,9 +33,11 @@ set nowrap
 filetype on
 filetype plugin on
 filetype indent on
+set visualbell
+set t_vb=
 
 set bg=dark
-colorscheme gruvbox
+colorscheme zenburn
 
 map <C-a> :NERDTreeToggle<CR>
 map <C-o> :term<Enter>
