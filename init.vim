@@ -1,4 +1,5 @@
 call plug#begin()
+    Plug 'voldikss/vim-floaterm'
     Plug 'honza/vim-snippets'
     Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
     Plug 'morhetz/gruvbox'
@@ -53,15 +54,12 @@ set bg=dark
 colorscheme gruvbox
 
 map <C-a> :NERDTreeToggle<CR>
-map <C-o> :term<Enter>
+map <C-o> :FloatermToggle<Enter>
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-
-let mapleader=" "
-nnoremap <SPACE> <Nop>
 
 nnoremap ,w <C-w>
 
@@ -90,7 +88,6 @@ let g:ale_fixers = {
 let g:ale_fix_on_save = 1
 
 " COC SETTINGS #######################################################################################################################
-
 let g:coc_global_extensions = [ 'coc-snippets', ]
 
 " Some servers have issues with backup files, see #649.
