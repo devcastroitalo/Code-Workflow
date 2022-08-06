@@ -1,11 +1,11 @@
 call plug#begin()
+    Plug 'morhetz/gruvbox'
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-surround'
     Plug 'mattn/emmet-vim'
     Plug 'jiangmiao/auto-pairs'
     Plug 'sheerun/vim-polyglot'
     Plug 'preservim/nerdtree'
-    Plug 'jnurmine/Zenburn'
 call plug#end()
 
 syntax on
@@ -37,7 +37,7 @@ set visualbell
 set t_vb=
 
 set bg=dark
-colorscheme zenburn
+colorscheme gruvbox
 
 map <C-a> :NERDTreeToggle<CR>
 map <C-o> :term<Enter>
