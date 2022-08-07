@@ -49,7 +49,7 @@ filetype plugin on
 filetype indent on
 set visualbell
 set t_vb=
-
+set guicursor=i:block
 
 set bg=dark
 colorscheme gruvbox
