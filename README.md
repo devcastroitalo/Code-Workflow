@@ -1,2 +1,2 @@
-# .vimrc
-My personal vim config
+# init.vim
+My personal neovim config
