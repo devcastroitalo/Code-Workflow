@@ -1,4 +1,5 @@
 call plug#begin()
+    Plug 'tanvirtin/monokai.nvim'
     Plug 'neovim/nvim-lspconfig'
     Plug 'voldikss/vim-floaterm'
     Plug 'honza/vim-snippets'
@@ -15,6 +16,7 @@ call plug#begin()
     Plug 'ryanoasis/vim-devicons'
     Plug 'sheerun/vim-polyglot'
     Plug 'dense-analysis/ale'
+    Plug 'tamelion/neovim-molokai'
 
   if (has("nvim"))
       Plug 'nvim-lua/plenary.nvim'
@@ -52,7 +54,7 @@ set t_vb=
 set guicursor=i:block
 
 set bg=dark
-colorscheme gruvbox
+colorscheme monokai
 
 map <C-a> :NERDTreeToggle<CR>
 map <C-o> :FloatermToggle<Enter>
@@ -62,7 +64,12 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-nnoremap ,w <C-w>
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
 
 let g:user_emmet_mode='n'
 let g:user_emmet_leader_key=','
