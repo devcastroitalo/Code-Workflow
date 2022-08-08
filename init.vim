@@ -38,6 +38,7 @@ set incsearch
 set ignorecase
 set smartcase
 set scrolloff=8
+set colorcolumn=100
 set encoding=utf-8
 set nobackup
 set nowritebackup
