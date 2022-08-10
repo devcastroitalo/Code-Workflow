@@ -55,7 +55,7 @@ set t_vb=
 set guicursor=i:block
 
 set bg=dark
-colorscheme monokai
+colorscheme gruvbox
 
 map <C-a> :NERDTreeToggle<CR>
 map <C-o> :FloatermToggle<Enter>
