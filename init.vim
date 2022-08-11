@@ -1,27 +1,17 @@
 call plug#begin()
-    Plug 'tanvirtin/monokai.nvim'
+    Plug 'morhetz/gruvbox'
     Plug 'neovim/nvim-lspconfig'
     Plug 'voldikss/vim-floaterm'
-    Plug 'honza/vim-snippets'
     Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
-    Plug 'morhetz/gruvbox'
+    Plug 'honza/vim-snippets'
     Plug 'airblade/vim-gitgutter'
-    Plug 'tpope/vim-surround'
     Plug 'mattn/emmet-vim'
     Plug 'jiangmiao/auto-pairs'
     Plug 'sheerun/vim-polyglot'
     Plug 'preservim/nerdtree'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-    Plug 'ryanoasis/vim-devicons'
     Plug 'sheerun/vim-polyglot'
     Plug 'dense-analysis/ale'
-    Plug 'tamelion/neovim-molokai'
-
-  if (has("nvim"))
-      Plug 'nvim-lua/plenary.nvim'
-      Plug 'nvim-telescope/telescope.nvim'
-  endif
+    Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
 
 syntax on
@@ -38,7 +28,7 @@ set incsearch
 set ignorecase
 set smartcase
 set scrolloff=8
-set colorcolumn=100
+set colorcolumn=80
 set encoding=utf-8
 set nobackup
 set nowritebackup
@@ -78,12 +68,6 @@ let g:user_emmet_leader_key=','
 vnoremap < <gv
 vnoremap > >gv
 
-" TELESCOPE SETTINGS #################################################################################################################
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-
 " ALE SETTINGS #######################################################################################################################
 let g:ale_linters = {
 \}
@@ -95,7 +79,13 @@ let g:ale_fixers = {
 let g:ale_fix_on_save = 1
 
 " COC SETTINGS #######################################################################################################################
-let g:coc_global_extensions = [ 'coc-snippets', ]
+let g:coc_global_extensions = [
+            \ 'coc-snippets',
+            \ 'coc-pairs',
+            \ 'coc-tsserver',
+            \ 'coc-eslint',
+            \ 'coc-json'
+            \]
 
 " Some servers have issues with backup files, see #649.
 set nobackup
