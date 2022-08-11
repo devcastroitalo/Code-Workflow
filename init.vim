@@ -1,4 +1,7 @@
 call plug#begin()
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'ryanoasis/vim-devicons'
     Plug 'morhetz/gruvbox'
     Plug 'neovim/nvim-lspconfig'
     Plug 'voldikss/vim-floaterm'
