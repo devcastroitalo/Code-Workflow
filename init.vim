@@ -44,6 +44,11 @@ filetype on
 filetype plugin on
 filetype indent on
 set visualbell
+set cursorline
+hi cursorline cterm=none term=none
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+highlight CursorLine guibg=#181818 ctermbg=234
 
 set bg=dark
 colorscheme gruvbox
