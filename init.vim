@@ -12,7 +12,6 @@ call plug#begin()
     Plug 'sheerun/vim-polyglot'
     Plug 'preservim/nerdtree'
     Plug 'dense-analysis/ale'
-    Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
 
 syntax on
