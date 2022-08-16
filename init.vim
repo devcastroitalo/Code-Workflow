@@ -2,7 +2,6 @@ call plug#begin()
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
-    Plug 'morhetz/gruvbox'
     Plug 'neovim/nvim-lspconfig'
     Plug 'voldikss/vim-floaterm'
     Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
@@ -12,7 +11,6 @@ call plug#begin()
     Plug 'jiangmiao/auto-pairs'
     Plug 'sheerun/vim-polyglot'
     Plug 'preservim/nerdtree'
-    Plug 'sheerun/vim-polyglot'
     Plug 'dense-analysis/ale'
     Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
@@ -56,6 +54,9 @@ colorscheme gruvbox
 map <C-a> :NERDTreeToggle<CR>
 map <C-o> :FloatermToggle<Enter>
 
+let g:user_emmet_mode='n'
+let g:user_emmet_leader_key=','
+
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -67,9 +68,6 @@ inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
-
-let g:user_emmet_mode='n'
-let g:user_emmet_leader_key=','
 
 vnoremap < <gv
 vnoremap > >gv
