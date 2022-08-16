@@ -1,4 +1,5 @@
 call plug#begin()
+    Plug 'phha/zenburn.nvim'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
@@ -28,7 +29,6 @@ set incsearch
 set ignorecase
 set smartcase
 set scrolloff=8
-set colorcolumn=80
 set encoding=utf-8
 set nobackup
 set nowritebackup
@@ -42,19 +42,6 @@ filetype plugin on
 filetype indent on
 set visualbell
 set cursorline
-hi cursorline cterm=none term=none
-autocmd WinEnter * setlocal cursorline
-autocmd WinLeave * setlocal nocursorline
-highlight CursorLine guibg=#181818 ctermbg=234
-
-set bg=dark
-colorscheme gruvbox
-
-map <C-a> :NERDTreeToggle<CR>
-map <C-o> :FloatermToggle<Enter>
-
-let g:user_emmet_mode='n'
-let g:user_emmet_leader_key=','
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -71,6 +58,17 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 vnoremap < <gv
 vnoremap > >gv
 
+colorscheme zenburn
+
+map <C-a> :NERDTreeToggle<CR>
+map <C-o> :FloatermToggle<Enter>
+
+let g:user_emmet_mode='n'
+let g:user_emmet_leader_key=','
+
+let g:floaterm_wintype='split'
+let g:floaterm_height=0.2
+
 " ALE SETTINGS #######################################################################################################################
 let g:ale_linters = {
 \}
@@ -83,8 +81,6 @@ let g:ale_fix_on_save = 1
 
 " COC SETTINGS #######################################################################################################################
 let g:coc_global_extensions = [
-            \ 'coc-snippets',
-            \ 'coc-pairs',
             \ 'coc-tsserver',
             \ 'coc-eslint',
             \ 'coc-json'
