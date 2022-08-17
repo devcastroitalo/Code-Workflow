@@ -1,18 +1,18 @@
 call plug#begin()
-    Plug 'phha/zenburn.nvim'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-    Plug 'ryanoasis/vim-devicons'
-    Plug 'neovim/nvim-lspconfig'
-    Plug 'voldikss/vim-floaterm'
-    Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
-    Plug 'honza/vim-snippets'
     Plug 'airblade/vim-gitgutter'
     Plug 'mattn/emmet-vim'
     Plug 'jiangmiao/auto-pairs'
     Plug 'sheerun/vim-polyglot'
     Plug 'preservim/nerdtree'
     Plug 'dense-analysis/ale'
+    Plug 'honza/vim-snippets'
+    Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
+    Plug 'voldikss/vim-floaterm'
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'vim-airline/vim-airline'
+    Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 syntax on
@@ -42,6 +42,7 @@ filetype plugin on
 filetype indent on
 set visualbell
 set cursorline
+set guicursor=i:block
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -58,7 +59,8 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 vnoremap < <gv
 vnoremap > >gv
 
-colorscheme zenburn
+set bg=dark
+colorscheme solarized
 
 map <C-a> :NERDTreeToggle<CR>
 map <C-o> :FloatermToggle<Enter>
@@ -67,7 +69,7 @@ let g:user_emmet_mode='n'
 let g:user_emmet_leader_key=','
 
 let g:floaterm_wintype='split'
-let g:floaterm_height=0.2
+let g:floaterm_height=0.3
 
 " ALE SETTINGS #######################################################################################################################
 let g:ale_linters = {
@@ -96,7 +98,7 @@ set updatetime=300
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
-set signcolumn=yes
+set signcolumn=no
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
