@@ -60,7 +60,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 set bg=dark
-colorscheme solarized
+colorscheme desert
 
 map <C-a> :NERDTreeToggle<CR>
 map <C-o> :FloatermToggle<Enter>
