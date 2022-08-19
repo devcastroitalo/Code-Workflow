@@ -12,7 +12,6 @@ call plug#begin()
     Plug 'ryanoasis/vim-devicons'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'vim-airline/vim-airline'
-    Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 syntax on
@@ -41,7 +40,6 @@ filetype on
 filetype plugin on
 filetype indent on
 set visualbell
-set cursorline
 set guicursor=i:block
 
 map <C-h> <C-w>h
