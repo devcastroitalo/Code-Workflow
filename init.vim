@@ -1,4 +1,5 @@
 call plug#begin()
+    Plug 'navarasu/onedark.nvim'
     Plug 'airblade/vim-gitgutter'
     Plug 'mattn/emmet-vim'
     Plug 'jiangmiao/auto-pairs'
@@ -41,6 +42,11 @@ filetype plugin on
 filetype indent on
 set visualbell
 set guicursor=i:block
+set cursorline
+hi cursorline cterm=none term=none
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+highlight CursorLine guibg=#181818 ctermbg=234
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -58,7 +64,13 @@ vnoremap < <gv
 vnoremap > >gv
 
 set bg=dark
-colorscheme desert
+
+" Vim
+let g:onedark_config = {
+    \ 'style': 'warmer',
+\}
+
+colorscheme onedark
 
 map <C-a> :NERDTreeToggle<CR>
 map <C-o> :FloatermToggle<Enter>
@@ -82,7 +94,6 @@ let g:ale_fix_on_save = 1
 " COC SETTINGS #######################################################################################################################
 let g:coc_global_extensions = [
             \ 'coc-tsserver',
-            \ 'coc-eslint',
             \ 'coc-json'
             \]
 
