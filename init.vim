@@ -1,5 +1,5 @@
 call plug#begin()
-    Plug 'navarasu/onedark.nvim'
+    Plug 'tomasiser/vim-code-dark'
     Plug 'airblade/vim-gitgutter'
     Plug 'mattn/emmet-vim'
     Plug 'jiangmiao/auto-pairs'
@@ -30,6 +30,7 @@ set ignorecase
 set smartcase
 set scrolloff=8
 set encoding=utf-8
+set colorcolumn=80
 set nobackup
 set nowritebackup
 set splitright
@@ -64,13 +65,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 set bg=dark
-
-" Vim
-let g:onedark_config = {
-    \ 'style': 'warmer',
-\}
-
-colorscheme onedark
+colorscheme codedark
 
 map <C-a> :NERDTreeToggle<CR>
 map <C-o> :FloatermToggle<Enter>
@@ -93,8 +88,12 @@ let g:ale_fix_on_save = 1
 
 " COC SETTINGS #######################################################################################################################
 let g:coc_global_extensions = [
-            \ 'coc-tsserver',
-            \ 'coc-json'
+            \'coc-snippets',
+            \'coc-tsserver',
+            \'coc-eslint',
+            \'coc-prettier',
+            \'coc-json',
+            \'coc-css'
             \]
 
 " Some servers have issues with backup files, see #649.
