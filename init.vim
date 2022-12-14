@@ -1,5 +1,4 @@
 call plug#begin()
-    Plug 'morhetz/gruvbox'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
@@ -13,9 +12,6 @@ call plug#begin()
     Plug 'jiangmiao/auto-pairs'
     Plug 'neovim/nvim-lspconfig'
     Plug 'voldikss/vim-floaterm'
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
 
 syntax on
@@ -33,7 +29,6 @@ set ignorecase
 set smartcase
 set scrolloff=8
 set encoding=utf-8
-set colorcolumn=80
 set nobackup
 set nowritebackup
 set splitright
@@ -67,9 +62,6 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 vnoremap < <gv
 vnoremap > >gv
 
-set bg=dark
-colorscheme gruvbox
-
 map <C-a> :NERDTreeToggle<CR>
 map <C-o> :FloatermToggle<Enter>
 
@@ -78,17 +70,6 @@ let g:user_emmet_leader_key=','
 
 let g:floaterm_wintype='split'
 let g:floaterm_height=0.3
-
-" TELESCOPE ##########################################################################################################################
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-
-" AIRLINE ############################################################################################################################
-let g:airline_theme = 'gruvbox'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
 
 " ALE SETTINGS #######################################################################################################################
 let g:ale_linters = {
@@ -258,36 +239,3 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-
-" Coc Snippets """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Use <C-l> for trigger snippet expand.
-imap <C-l> <Plug>(coc-snippets-expand)
-
-" Use <C-j> for select text for visual placeholder of snippet.
-vmap <C-j> <Plug>(coc-snippets-select)
-
-" Use <C-j> for jump to next placeholder, it's default of coc.nvim
-let g:coc_snippet_next = '<c-j>'
-
-" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
-let g:coc_snippet_prev = '<c-k>'
-
-" Use <C-j> for both expand and jump (make expand higher priority.)
-imap <C-j> <Plug>(coc-snippets-expand-jump)
-
-" Use <leader>x for convert visual selected code to snippet
-xmap <leader>x  <Plug>(coc-convert-snippet)
-
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-let g:coc_snippet_next = '<tab>'
