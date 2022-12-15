@@ -41,7 +41,7 @@ filetype plugin on
 filetype indent on
 set visualbell
 set guicursor=i:block
-set cursorline
+" set cursorline
 hi cursorline cterm=none term=none
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
@@ -61,6 +61,8 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 vnoremap < <gv
 vnoremap > >gv
+
+colorscheme ron
 
 map <C-a> :NERDTreeToggle<CR>
 nnoremap   <silent>   <F7>    :FloatermNew<CR>
