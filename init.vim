@@ -1,4 +1,5 @@
 call plug#begin()
+    Plug 'srcery-colors/srcery-vim'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
@@ -12,6 +13,8 @@ call plug#begin()
     Plug 'jiangmiao/auto-pairs'
     Plug 'neovim/nvim-lspconfig'
     Plug 'voldikss/vim-floaterm'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
 
 syntax on
@@ -41,7 +44,7 @@ filetype plugin on
 filetype indent on
 set visualbell
 set guicursor=i:block
-" set cursorline
+set cursorline
 hi cursorline cterm=none term=none
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
@@ -62,7 +65,8 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 vnoremap < <gv
 vnoremap > >gv
 
-colorscheme ron
+set background=dark
+colorscheme srcery
 
 map <C-a> :NERDTreeToggle<CR>
 nnoremap   <silent>   <F7>    :FloatermNew<CR>
@@ -75,6 +79,12 @@ let g:user_emmet_leader_key=','
 
 let g:floaterm_wintype='split'
 let g:floaterm_height=0.3
+
+" TELESCOPE ##########################################################################################################################
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " ALE SETTINGS #######################################################################################################################
 let g:ale_linters = {
