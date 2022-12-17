@@ -1,4 +1,6 @@
+" PLUGINS ################################################################################################################################
 call plug#begin()
+    Plug 'joshdick/onedark.vim'
     Plug 'srcery-colors/srcery-vim'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -17,6 +19,7 @@ call plug#begin()
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
 
+" BASIC SETTINGS ########################################################################################################################
 syntax on
 set nu
 set rnu
@@ -45,11 +48,8 @@ filetype indent on
 set visualbell
 set guicursor=i:block
 set cursorline
-hi cursorline cterm=none term=none
-autocmd WinEnter * setlocal cursorline
-autocmd WinLeave * setlocal nocursorline
-highlight CursorLine guibg=#181818 ctermbg=234
 
+" REMAPS ###############################################################################################################################
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -66,9 +66,12 @@ vnoremap < <gv
 vnoremap > >gv
 
 set background=dark
-colorscheme srcery
+colorscheme vscodetheme
 
+" NERDTREE ############################################################################################################################
 map <C-a> :NERDTreeToggle<CR>
+
+" FLOATERM ############################################################################################################################
 nnoremap   <silent>   <F7>    :FloatermNew<CR>
 tnoremap   <silent>   <F7>    <C-\><C-n>:FloatermNew<CR>
 nnoremap   <silent>   <F12>   :FloatermToggle<CR>
@@ -103,7 +106,8 @@ let g:coc_global_extensions = [
             \'coc-eslint',
             \'coc-prettier',
             \'coc-json',
-            \'coc-css'
+            \'coc-css',
+            \'coc-phpls'
             \]
 
 " Some servers have issues with backup files, see #649.
