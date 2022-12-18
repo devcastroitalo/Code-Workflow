@@ -5,6 +5,7 @@
 (scroll-bar-mode -1)
 (tooltip-mode -1)
 (global-display-line-numbers-mode)
+(setq display-line-numbers 'relative)
 (column-number-mode t)
 ;; (global-hl-line-mode t)           ; Line highlight
 (setq visible-bell t)
@@ -32,5 +33,3 @@
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
-
-
