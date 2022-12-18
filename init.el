@@ -9,12 +9,9 @@
 (global-display-line-numbers-mode)
 (setq display-line-numbers 'relative)
 (column-number-mode t)
-(global-hl-line-mode t)           
+(global-hl-line-mode t)          
 
 (setq visible-bell t)
-
-(electric-layout-mode 1)
-(electric-pair-mode 1)
 
 (global-unset-key (kbd "C-z"))
 
@@ -62,6 +59,11 @@
   (progn
 	(ac-config-default)
 	(global-auto-complete-mode t)))
+
+(use-package smartparens
+  :ensure t
+  :init)
+(require 'smartparens-config)
 
 ;; MELPA stuff
 (custom-set-variables
