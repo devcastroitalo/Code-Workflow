@@ -60,11 +60,6 @@
 	(ac-config-default)
 	(global-auto-complete-mode t)))
 
-(use-package smartparens
-  :ensure t
-  :init)
-(require 'smartparens-config)
-
 ;; MELPA stuff
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
