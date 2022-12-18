@@ -1,0 +1,11 @@
+    "extensions.ignoreRecommendations": true,
+    "workbench.startupEditor": "none",
+    "workbench.layoutControl.enabled": false,
+    "editor.bracketPairColorization.enabled": false,
+
+    "window.title": "${appName}",
+
+    "editor.fontFamily": "Hack NF",
+    "editor.fontSize": 14,
+
+    "editor.rulers": [80],
