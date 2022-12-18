@@ -1,14 +1,18 @@
 ;; Basics settings
 (setq inhibit-startup-message t)
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (tooltip-mode -1)
+
 (global-display-line-numbers-mode)
 (setq display-line-numbers 'relative)
 (column-number-mode t)
-;; (global-hl-line-mode t)           ; Line highlight
+(global-hl-line-mode t)           
+
 (setq visible-bell t)
+
 (electric-layout-mode 1)
 (electric-pair-mode 1)
 
@@ -59,6 +63,7 @@
 	(ac-config-default)
 	(global-auto-complete-mode t)))
 
+;; MELPA stuff
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -66,7 +71,8 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    '("7923541211298e4fd1db76c388b1d2cb10f6a5c853c3da9b9c46a02b7f78c882" default))
- '(package-selected-packages '(gruber-darker-theme use-package try auto-complete)))
+ '(package-selected-packages
+   '(smartparens gruber-darker-theme use-package try auto-complete)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
