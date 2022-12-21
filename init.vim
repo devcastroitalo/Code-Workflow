@@ -65,6 +65,7 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 vnoremap < <gv
 vnoremap > >gv
 
+" COLORSCHEME #########################################################################################################################
 set background=dark
 colorscheme vscodetheme
 
@@ -77,11 +78,12 @@ tnoremap   <silent>   <F7>    <C-\><C-n>:FloatermNew<CR>
 nnoremap   <silent>   <F12>   :FloatermToggle<CR>
 tnoremap   <silent>   <F12>   <C-\><C-n>:FloatermToggle<CR>
 
-let g:user_emmet_mode='n'
-let g:user_emmet_leader_key=','
-
 let g:floaterm_wintype='split'
 let g:floaterm_height=0.3
+
+" EMMET ##############################################################################################################################
+let g:user_emmet_mode='n'
+let g:user_emmet_leader_key=','
 
 " TELESCOPE ##########################################################################################################################
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
@@ -107,7 +109,6 @@ let g:coc_global_extensions = [
             \'coc-prettier',
             \'coc-json',
             \'coc-css',
-            \'coc-phpls'
             \]
 
 " Some servers have issues with backup files, see #649.
