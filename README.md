@@ -6,3 +6,4 @@
 - i3config: i3wm config file
 - vscotheme.vim: My modified [vim-code-dark](https://github.com/tomasiser/vim-code-dark) theme
 - settings.json: My VSCode settings file
+- keybidings.json: My VSCode keybindings settings file
