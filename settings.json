@@ -1,0 +1,53 @@
+{
+    "extensions.ignoreRecommendations": true,
+    "workbench.layoutControl.enabled": false,
+    "editor.bracketPairColorization.enabled": false,
+    "workbench.startupEditor": "none",
+
+    "window.title": "${appName}",
+
+    "editor.fontFamily": "Ubuntu Mono",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 18,
+    "editor.lineNumbers": "relative",
+
+    "editor.rulers": [
+        80
+    ],
+
+    // VIM emulator settings
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<tab>"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<S-tab>"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [">"], 
+            "after": [">", "g", "v"]
+        },
+        {
+            "before": ["<"],
+            "after": ["<", "g", "v"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["revealInExplorer"]
+        },
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        }
+    ],
+    "vim.leader": "<space>",
+
+    "explorer.compactFolders": false,
+    "workbench.iconTheme": "material-icon-theme"
+}
