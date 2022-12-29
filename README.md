@@ -2,8 +2,12 @@
 
 ## My personal workflow config files 
 
-- init.vim: neovim config file 
-- i3config: i3wm config file
-- vscotheme.vim: My modified [vim-code-dark](https://github.com/tomasiser/vim-code-dark) theme
-- settings.json: My VSCode settings file
-- keybidings.json: My VSCode keybindings settings file
+```
+i3
+|____i3confi: My i3config file
+|____i3blocks.conf: My i3blocks config file
+
+vim
+|____init.vim: My neovim settings file
+|____vscodetheme.vim: My modified [vim-code-dark](https://github.com/tomasiser/vim-code-dark) theme
+```
