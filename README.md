@@ -55,6 +55,6 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 ## VSCode plugins list 
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-- [JavaScript (ES6) code snippets] (https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
 - [JavaScript and TypeScript Nightly](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)
 - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
