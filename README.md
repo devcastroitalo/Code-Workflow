@@ -14,6 +14,9 @@ vim
 vscode
 |____keybindings.json: My VSCode keybingins config file
 |____settings.json: My VSCode configuration file
+
+terminator
+|____config: My terminator config file
 ```
 
 ## NVim plugins list 
