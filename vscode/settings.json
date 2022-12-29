@@ -7,8 +7,8 @@
     "window.title": "${appName}",
 
     "editor.fontFamily": "Ubuntu Mono",
-    "editor.fontSize": 16,
-    "editor.lineHeight": 18,
+    "editor.fontSize": 17,
+    "editor.lineHeight": 19,
     "editor.lineNumbers": "relative",
 
     "editor.rulers": [
