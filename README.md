@@ -7,15 +7,15 @@ i3
 |____i3confi: My i3config file
 |____i3blocks.conf: My i3blocks config file
 
-vim
+Vim
 |____init.vim: My neovim settings file
 |____vscodetheme.vim: My modified vim-code-dark theme
 
-vscode
+Vscode
 |____keybindings.json: My VSCode keybingins config file
 |____settings.json: My VSCode configuration file
 
-terminator
+Terminator
 |____config: My terminator config file
 ```
 
