@@ -9,5 +9,9 @@ i3
 
 vim
 |____init.vim: My neovim settings file
-|____vscodetheme.vim: My modified [vim-code-dark](https://github.com/tomasiser/vim-code-dark) theme
+|____vscodetheme.vim: My modified vim-code-dark theme
+
+vscode
+|____keybindings.json: My VSCode keybingins config file
+|____settings.json: My VSCode configuration file
 ```
