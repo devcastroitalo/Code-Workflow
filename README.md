@@ -46,3 +46,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
 - [JavaScript and TypeScript Nightly](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)
 - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+- [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+- [jQuery Code Snippets](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets)
+- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
