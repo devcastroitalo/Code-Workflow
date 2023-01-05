@@ -10,6 +10,9 @@
     "editor.fontSize": 17,
     "editor.lineHeight": 19,
     "editor.lineNumbers": "relative",
+    "editor.insertSpaces": false,
+    "editor.tabSize": 8,
+    "editor.detectIndentation": true
 
     "editor.rulers": [
         80
