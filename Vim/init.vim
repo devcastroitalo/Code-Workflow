@@ -42,6 +42,7 @@ set splitbelow
 set autoread
 set mouse=a
 set nowrap
+set colorcolumn=80
 filetype on
 filetype plugin on
 filetype indent on
