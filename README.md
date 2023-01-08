@@ -1,6 +1,6 @@
 # Code Workflow
 
-## My personal workflow config files 
+## My personal workflow config files
 
 ```
 i3
@@ -10,6 +10,8 @@ i3
 Vim
 |____init.vim: My neovim settings file
 |____vscodetheme.vim: My modified vim-code-dark theme
+|____ftplugin
+     |____c.vim: My C lang settings
 
 Vscode
 |____keybindings.json: My VSCode keybingins config file
@@ -19,7 +21,7 @@ Terminator
 |____config: My terminator config file
 ```
 
-## NVim plugins list 
+## NVim plugins list
 
 ```
 Plug 'srcery-colors/srcery-vim'
@@ -40,7 +42,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 ```
 
-## VSCode extensions list 
+## VSCode extensions list
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)

@@ -23,6 +23,7 @@ call plug#end()
 syntax on
 set nu
 set rnu
+set autoindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
