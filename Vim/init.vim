@@ -107,8 +107,6 @@ let g:ale_fix_on_save = 1
 let g:coc_global_extensions = [
             \'coc-snippets',
             \'coc-tsserver',
-            \'coc-eslint',
-            \'coc-prettier',
             \'coc-json',
             \'coc-css',
             \'coc-clangd',
