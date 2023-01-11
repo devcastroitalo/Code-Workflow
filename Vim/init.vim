@@ -6,7 +6,6 @@ call plug#begin()
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
     Plug 'sheerun/vim-polyglot'
-    Plug 'preservim/nerdtree'
     Plug 'dense-analysis/ale'
     Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
     Plug 'honza/vim-snippets'
@@ -70,9 +69,6 @@ vnoremap > >gv
 " COLORSCHEME #########################################################################################################################
 set background=dark
 colorscheme vscodetheme
-
-" NERDTREE ############################################################################################################################
-map <C-a> :NERDTreeToggle<CR>
 
 " FLOATERM ############################################################################################################################
 nnoremap   <silent>   <F7>    :FloatermNew<CR>
