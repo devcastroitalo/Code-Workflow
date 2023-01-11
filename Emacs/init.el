@@ -6,8 +6,8 @@
 (scroll-bar-mode -1)
 (tooltip-mode    -1)
 
+(setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode)
-(setq display-line-numbers 'relative)
 (column-number-mode t)
 
 (setq visible-bell t)
